@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f1ee92ae94.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <title>Document</title>
     <style>
@@ -81,6 +82,54 @@
             font-size: 2.6rem;
             color: white;
         } 
+        .title-description p{
+            color: white;
+            margin-top: 1rem;
+            line-height: 1.875rem;
+            font-size: 18px;
+            margin-bottom: 1rem;
+        }
+        .btn-description button{
+            padding: 1rem 2rem;
+            font-size: 15px;
+            font-weight: bold;
+            background: #02B875;
+            margin-right: 1.5rem;
+        }
+        .btn-description a {
+            color: white;
+        }
+        i {
+            margin-left: 5px;
+        }
+        .column-group{
+            display: flex;
+            flex-direction: column;
+        }
+        .content-text{
+            text-align: center;
+        }
+        .margin-block {
+            margin: .5rem;
+        }
+        .font-title{
+            font-size: 50px;
+        }
+        .font-quote {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #adb5bd;
+            margin-bottom: 0.75rem;
+            display: block;
+            font-weight: 500;
+        }
+        .content-text p{
+            margin-bottom: 1.5rem;
+            line-height: 1.875rem;
+            display: block;
+            font-weight: 400;
+        }
     </style>
 </head>
 
@@ -108,9 +157,9 @@
                 <h2>Build stunning websites and apps</h2>
                 <p>Meet Wingman, a robust suite of styled pages and components, powered by Bootstrap 4. 
                 The ideal starting point for product landing pages, stylish web-apps and complete company websites.</p>
-                <div>
+                <div class="btn-description">
                     <button class="btn-purchase-style">Purchase Now</button>
-                    <a>Start exploring<i></i></a>
+                    <a>Start exploring<i class="fas fa-chevron-right"></i></a>
                 </div>               
             </div>
             <div class="carrossel-page">
@@ -118,5 +167,35 @@
             </div>
         </div>
     </section>
+    <article class="content-page">
+        <div class="container column-group">
+            <div class="content-text column-group">
+                <a class="margin-block font-quote">MEET WINGMAN</a>
+                <h1 class="margin-block font-title">Attractive from every angle</h1>
+                <p class="margin-block">Wingman delivers a seamless user experience, offering visual consistency for your brand, from landing to logged-in
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://wingman.mediumra.re/assets/img/overview/landing-9-hero.jpg" alt=""> 
+                    <h4>Landing Pages</h4> 
+                    <p>Impress potential customers and introduce your product using Wingman’s diverse, purpose-built landing pages</p>
+                    <a>Explore Landing Pages<i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="card">
+                    <img src="https://wingman.mediumra.re/assets/img/overview/app-profile-social-hero.jpg" alt=""> 
+                    <h4>App Pages</h4> 
+                    <p>A robust suite of styled app pages and flexible Bootstrap-based components makes Wingman ideal for building Apps</p>
+                    <a>Explore App Pages<i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="card">
+                    <img src="https://wingman.mediumra.re/assets/img/overview/company-simple-hero.jpg" alt=""> 
+                    <h4>Inner Pages</h4> 
+                    <p>Landing pages are just the beginning. Wingman includes a collection of detailed inner pages to complete your online presence.</p>
+                    <a>Explore Inner Pages<i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </article>
 </body>
 </html>

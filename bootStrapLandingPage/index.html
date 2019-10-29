@@ -123,12 +123,47 @@
             margin-bottom: 0.75rem;
             display: block;
             font-weight: 500;
+            margin-top: 5rem
         }
         .content-text p{
             margin-bottom: 1.5rem;
             line-height: 1.875rem;
             display: block;
             font-weight: 400;
+        }
+        .font-text-style {
+            font-size: 19px;
+            letter-spacing: .5px;
+        }
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .card {
+            margin: .5rem 1rem;
+        }
+        .cards img {
+            width: 350px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .card h4 {
+            margin-top: 1.5rem;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 1rem
+        }
+        .card p {
+            letter-spacing: .3px;
+            margin-bottom: 1rem;
+        }
+        .card a {
+            color: rgb(25, 123, 214);
+        }
+        .content-page {
+            background: rgb(236, 236, 236);
         }
     </style>
 </head>
@@ -172,7 +207,7 @@
             <div class="content-text column-group">
                 <a class="margin-block font-quote">MEET WINGMAN</a>
                 <h1 class="margin-block font-title">Attractive from every angle</h1>
-                <p class="margin-block">Wingman delivers a seamless user experience, offering visual consistency for your brand, from landing to logged-in
+                <p class="margin-block font-text-style">Wingman delivers a seamless user experience, offering visual consistency for your brand, from landing to logged-in
                 </p>
             </div>
             <div class="cards">
@@ -197,5 +232,15 @@
             </div>
         </div>
     </article>
+    <section>
+        <div class="container">
+            <div class="">
+                <a class="margin-block font-quote">DESIGNED FOR DEVELOPERS</a>
+                <h4>Familiar, modern tooling</h4> 
+                <p>Wingman employs industry-standard development tools with an intuitive workflow designed to get you up and runnning faster.</p>
+                <a>Explore Documentation<i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

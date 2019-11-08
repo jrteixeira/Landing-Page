@@ -21,7 +21,23 @@
         a {
         text-decoration: none;
         }
-
+        .m-x-1{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        .m-y-1{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .p-r-0 {
+            padding-right: 0 !important;
+        }
+        .p-l-0 {
+            padding-left: 0 !important;
+        }
+        .fixed-menu {
+            position: fixed;
+        }
         .container {
             width: 900px;
             margin: 0 auto;
@@ -82,7 +98,7 @@
             font-size: 2.6rem;
             color: white;
         } 
-        .title-description p{
+        .description-style{
             color: white;
             margin-top: 1rem;
             line-height: 1.875rem;
@@ -163,13 +179,27 @@
             color: rgb(25, 123, 214);
         }
         .content-page {
+            padding-bottom: 5rem;
             background: rgb(236, 236, 236);
+        }
+        .img-brands {
+            width: 350px;
+        }
+        .color-link {
+            color: rgb(25, 123, 214);
+        }
+        .text-space {
+            letter-spacing: .3px;
+            margin-bottom: 1rem;
+        }
+        .title-description-style {
+            font-size: 2.5rem;
         }
     </style>
 </head>
 
 <body>
-    <header class="menu">
+    <header class="menu fixed-menu">
         <div class="container center-content">
             <nav>
                 <ul class="menu-list">
@@ -190,7 +220,7 @@
         <div class="container center-content">
             <div class="title-description">
                 <h2>Build stunning websites and apps</h2>
-                <p>Meet Wingman, a robust suite of styled pages and components, powered by Bootstrap 4. 
+                <p class="description-style">Meet Wingman, a robust suite of styled pages and components, powered by Bootstrap 4. 
                 The ideal starting point for product landing pages, stylish web-apps and complete company websites.</p>
                 <div class="btn-description">
                     <button class="btn-purchase-style">Purchase Now</button>
@@ -232,13 +262,19 @@
             </div>
         </div>
     </article>
+    
     <section>
-        <div class="container">
-            <div class="">
-                <a class="margin-block font-quote">DESIGNED FOR DEVELOPERS</a>
-                <h4>Familiar, modern tooling</h4> 
-                <p>Wingman employs industry-standard development tools with an intuitive workflow designed to get you up and runnning faster.</p>
-                <a>Explore Documentation<i class="fas fa-chevron-right"></i></a>
+        <div class="container center-content">
+            <div class="title-description p-r-0">
+                <a class="margin-block font-quote m-y-1">DESIGNED FOR DEVELOPERS</a>
+                <h1 class="m-y-1 title-description-style">Familiar, modern tooling</h1>
+                <p class="margin-block font-text-style text-space">Wingman employs industry-standard development tools with an
+                    intuitive workflow designed to get you up and runnning faster.
+                </p>
+                <a class="color-link" >Explore Documentation<i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="card-img-top p-r-0">
+                 <img alt="Image" src="https://wingman.mediumra.re/assets/img/graphic-developer-group.svg" class="img-brands">
             </div>
         </div>
     </section>
